@@ -1,0 +1,166 @@
+.row {
+	padding: 5px;
+	width: 990px;
+	margin:  20px auto;
+
+
+}
+
+header {
+	text-align: center;
+}
+
+#chicken  {
+	background-color: #77ffff;
+	border: 1px solid black;
+
+	width: 300px;
+	height: 150px;
+	float: left;
+	padding: 0px 0px 15px 15px;
+	margin: 5px 5px 10px 5px;
+	
+
+}
+p1 {
+	width: 33%;
+	margin-left: 66%;
+	text-align: center;
+	float: right;
+	padding: 5px 15px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+
+}
+
+p2 {
+	/* margin: 20px auto; */
+	
+	position: relative;
+	right: 6px;
+	left: 1px;
+	width: 85%;
+	
+}
+
+#description {
+	padding-right: 10px;
+
+
+}
+
+
+#chicken p1 {
+	background-color: green;
+	
+}
+#chicken p2 {
+	
+	
+	margin-bottom: 10px;
+}
+
+#beef {
+	background-color: red;
+	border: 1px solid black;
+	width: 300px; /* Account for margins + border values */
+	height: 150px;
+	float: left;
+	padding: 0px 0px 15px 15px;
+	margin: 5px 5px 10px 5px;
+}
+#beef p1 {
+	background-color: #5f5530;
+	
+}
+
+#sushi {
+	background-color: yellow;
+	border: 1px solid black;
+	width: 300px;
+	height: 150px;
+	padding: 0px 0px 15px 15px;
+	margin: 5px 5px 5px 5px;
+	float: left;
+}
+ 
+#sushi p1 {
+	background-color: #9aaaff;
+	
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 991px or less */
+@media (min-width: 768px ) and (max-width: 991px) {
+.row {
+		width: 74.97%;
+	}
+	#chicken {
+		width: 44.99%;
+		float: left;
+		
+	}
+	#beef {
+		
+		
+		width: 44.99%;
+		float: left;
+	}
+	
+	#sushi {
+		clear: both;
+	
+		width: auto;
+		float: none;
+	}
+
+	header{
+		padding: 1% 4%;
+		text-align: center;
+	}
+}
+
+/* for 767px or less */
+@media  (max-width: 767px) {
+
+	.row {
+		width: 68%;
+	}
+
+	#chicken {
+		width: 94%;
+		float: none;
+		margin-right: 20px;
+	}
+	
+	#beef {
+		width: 94%;
+		float: none;
+		
+		
+	}
+	
+	#sushi {
+		width: 94%;
+		float: none;
+		margin-right: 20px;
+	}
+
+}
+
+
+
+
+#chicken, #beef, #sushi {
+	background: ff00ff;
+}
+
+}
+header, #chicken, #beef, #sushi {
+	margin-bottom: 5px;
+}
+
+.row, header, #chicken, #beef, #sushi{
+	border: solid 1px #ccc;
+}
